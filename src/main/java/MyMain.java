@@ -8,7 +8,15 @@ public class MyMain {
     // Ex. binaryToDecimal("1010") => 10 (ten)
     //     binaryToDecimal("110010") => 50
     public static int binaryToDecimal(String binary) {
-        // REPLACE WITH YOUR CODE
+        int binary_decimal = Integer.parseInt(binary);
+        int n = 1;
+        int final_num = 0;
+        while (binary_decimal > 0) {
+            int lastdigit = binary_decimal % 10;
+            final_num = (lastdigit * n) + final_num;
+            binary_decimal /= 10;
+            n *= 10;
+        }
         return -1;
     }
 
@@ -24,6 +32,6 @@ public class MyMain {
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        // YOUR CODE HERE
+        // binaryToDecimal(binary);
     }
 }
