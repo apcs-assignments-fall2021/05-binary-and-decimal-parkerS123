@@ -17,6 +17,7 @@ public class MyMain {
             binary_decimal /= 10;
             n *= 10;
         }
+        // String final_string = String.valueOf(final_num);
         System.out.println(final_num);
         return final_num;
     }
@@ -25,7 +26,7 @@ public class MyMain {
     // representing the binary representation of that number.
     // Ex. decimalToBinary(7) => "111"
     //     decimalToBinary(152) => "10011000"
-    public static int decimalToBinary(int decimal) {
+    public static String decimalToBinary(int decimal) {
         int m = 1;
         int final_things = 0;
         while (decimal > 0) {
@@ -34,8 +35,9 @@ public class MyMain {
             decimal /= 2;
             m *= 10;
         }
-        System.out.println(final_things);
-        return final_things;
+        String final_string = String.valueOf(final_things);
+        System.out.println(final_string);
+        return final_string;
     }
     
     
