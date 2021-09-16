@@ -15,7 +15,7 @@ public class MyMain {
             int lastdigit = binary_decimal % 10;
             final_num = (lastdigit * n) + final_num;
             binary_decimal /= 10;
-            n *= 10;
+            n *= 2;
         }
         // String final_string = String.valueOf(final_num);
         System.out.println(final_num);
